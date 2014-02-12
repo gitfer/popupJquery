@@ -27,7 +27,7 @@
 
         <div class="hero-unit">
           <h1>'Allo, 'Allo!</h1>
-          <p>You now have</p>
+          <p id="log"></p>
           <ul>
             <li>HTML5 Boilerplate</li>
             <input id="primo" type="button" name="" value="Primo">
@@ -36,8 +36,43 @@
         </div>
 
         <div id="dialog">
-           <p> Prova</p>
         </div>
+
+        <script type="text/html" id="template">
+        <form id="form">
+        <h1>Form 1</h1>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="Nome" value="Nome" placeholder="Nome" required>
+                <label for="cognome">Cognome</label>
+        <input  id="cognome" type="text" name="Cognome" value="Cognome" placeholder="Cognome" required minlength="2">
+        </form>
+        </script>
+
+        <script type="text/html" id="templateDue">
+        <form id="form2">
+        <h1>Form 2</h1>
+        <input type="text" name="PIVA" value="PIVA" placeholder="PIVA">
+        <input type="text" name="Via" value="Via" placeholder="Via" required minlength="2">
+        </form>
+        </script>
+
+        <script type="text/html" id="templateTre">
+        <form id="form3">
+        <h1>Form 3</h1>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="Nome" value="Nome" placeholder="Nome" required>
+                <label for="cognome">Cognome</label>
+        <input  id="cognome" type="text" name="Cognome" value="Cognome" placeholder="Cognome" required minlength="2">
+        </form>
+        </script>
+
+        <script type="text/html" id="templateQuattro">
+        <form id="form4">
+        <h1>Form 4</h1>
+        <input type="text" name="PIVA" value="PIVA" placeholder="PIVA">
+        <input type="text" name="Via" value="Via" placeholder="Via" required minlength="2">
+        </form>
+        </script>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -45,6 +80,8 @@
         <script src="bower_components/jqueryui/ui/jquery-ui.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+        <script src="scripts/jquery.loadTemplate-1.4.0.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
