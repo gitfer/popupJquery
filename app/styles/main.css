@@ -27,3 +27,14 @@ body {
     color: #000;
     padding: 0.2em 0;
 }
+.no-close .ui-dialog-titlebar {
+  display: none;
+}
+
+.ui-dialog-buttonset .ui-button-spl1{
+    background:green;
+}
+.ui-dialog-buttonset .ui-button-spl2{
+    background:red;
+}
+#dialog { display: none; }
